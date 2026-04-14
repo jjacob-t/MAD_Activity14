@@ -45,6 +45,7 @@ class HomePage extends StatefulWidget {
 
 class FCMService {
   final FirebaseMessaging messaging = FirebaseMessaging.instance;
+  // Local notifications for popups
   final FlutterLocalNotificationsPlugin localNotifications = FlutterLocalNotificationsPlugin();
 
   Future<void> initialize({required void Function(RemoteMessage) onData}) async {
@@ -57,6 +58,7 @@ class FCMService {
 
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       onData(message);
+      // Manually show popup with message
       _showLocalNotification(message);  
     });
 

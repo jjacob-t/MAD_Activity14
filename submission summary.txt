@@ -1,0 +1,6 @@
+CSC 4360 - In-Class Activity 14 Submission
+Student: Jacob Thomas
+GitHub Repository: https://github.com/jjacob-t/MAD_Activity14
+Evidence: Foreground test (with notification) screenshot, background notification screenshot with image change, invalid asset screenshot
+Reflection Document: reflection_14.docx
+Notes: No additional notes.
